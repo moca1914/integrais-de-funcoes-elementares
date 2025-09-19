@@ -40,7 +40,7 @@ int main() {
     cout << "Digite o limite superior b: ";
     cin >> b;
 
-    // Verificação simples para evitar divisão por zero
+    // Evitar a descontinuidade quando houver divisão por 0.
     if ((escolha == 3) && (a <= 0 && b >= 0)) {
         cerr << "Erro: o intervalo inclui x = 0, onde 1/x é indefinido." << endl;
         return 1;
